@@ -15,22 +15,28 @@ So what about it? This path has a "butterfly" shape and exhibits chaotic propert
 Under OSX, having Xcode installed.
 
 `$ make`
+
 `$ ./lorenz`
 
 ## Usage
 
-Space: Play/Pause
-ESC: Exit
-Mouse: Rotate
-Keys 1-5: Several presets.
-+/-: Zoom
-u: Animation mode (Full graph, start to current, trail)
-r/t: Animation speed
-y: Restart animation.
-o: Line mode (Point/Line/Triangles)
-p: Show graph of projection to each axis.
+* Space: Play/Pause
+* ESC: Exit
+* Mouse: Rotate
+* Keys 1-5: Several presets.
+* +/-: Zoom
+* u: Animation mode (Full graph, start to current, trail)
+* r/t: Animation speed
+* y: Restart animation.
+* o: Line mode (Point/Line/Triangles)
+* p: Show graph of projection to each axis.
 
 ## Screenshots
 
-![](/screenshots/1.png)
+![](/screenshots/screenshot1.png)
+![](/screenshots/screenshot2.png)
+![](/screenshots/screenshot3.png)
+![](/screenshots/screenshot4.png)
+![](/screenshots/screenshot5.png)
+![](/screenshots/screenshot6.png)
 
