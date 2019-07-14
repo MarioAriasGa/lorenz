@@ -9,11 +9,15 @@
 #include <sys/stat.h>
 #include <sys/time.h>
 
+#ifdef __APPLE__
 #include <OpenGL/OpenGL.h>
 #include <OpenGL/gl.h>
 #include <OpenGL/CGLDevice.h>
 #include <GLUT/glut.h>
-
+#elif __linux__
+#include <GL/glut.h>
+#include <GL/glu.h>
+#endif
 
 #include "vector.hpp"
 
@@ -546,8 +550,11 @@ void initGL(int width, int height) {
 	
 	// Vert sync
 	int swap_interval = 1;
+
+#ifdef __APPLE__
 	CGLContextObj ctx = CGLGetCurrentContext();
 	CGLSetParameter(ctx, kCGLCPSwapInterval, &swap_interval);
+#endif
 }
 
 int main(int argc, char** argv) {

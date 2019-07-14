@@ -7,12 +7,18 @@
  *
  */
 
+#ifdef __APPLE__
 #include <OpenGL/OpenGL.h>
 #include <OpenGL/gl.h>
 #include <OpenGL/CGLDevice.h>
 #include <GLUT/glut.h>
-#include "drawing.h"
 
+#elif __linux__
+#include <GL/glut.h>
+
+#endif
+
+#include "drawing.h"
 
 void GetColour(double v,double vmin,double vmax, COLOUR *c)
 {

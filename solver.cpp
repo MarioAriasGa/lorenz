@@ -14,7 +14,7 @@
 #include "solver.h"
 
 int solver = 3;
-char *solverNames[] = { "Euler", "EulerMod", "RungeKutta2", "RungeKutta3", "RungeKutta4", "RKF" };
+const char *solverNames[] = { "Euler", "EulerMod", "RungeKutta2", "RungeKutta3", "RungeKutta4", "RKF" };
 
 // Runge Kutta
 double error = 10000;

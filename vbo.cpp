@@ -8,7 +8,17 @@
  */
 
 #include <stdio.h>
+
+#ifdef __APPLE__
 #include <OpenGL/gl.h>
+
+#elif __linux__
+#define GL_GLEXT_PROTOTYPES 1
+#define GL3_PROTOTYPES 1
+#include <GL/glu.h>
+#include <GL/glext.h>
+#endif
+
 #include "vbo.h"
 
 GLuint vboId=0;

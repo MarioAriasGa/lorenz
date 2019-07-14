@@ -10,11 +10,18 @@ Given a 3D point in space (x,y,z) at time t0, you can calculate the next point t
 
 So what about it? This path has a "butterfly" shape and exhibits chaotic properties, a small change in the initial point can lead to completely different (and apparently random) paths.
 
-## Compiling
+## Dependencies
 
 Under OSX, having Xcode installed.
 
+Under Linux: `sudo apt-get install freeglut3-dev libgles2-mesa-dev` 
+
+## Compiling
+
 `$ make`
+
+
+## Running
 
 `$ ./lorenz`
 
